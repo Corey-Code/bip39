@@ -18,6 +18,17 @@ function estimateFee (type) {
   }
 }
 
+bitcoin.networks.commercium = {
+    magicPrefix: '\x19Commercium Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x1c,
+    scriptHash: 0x32,
+    wif: 0x8c,
+}
+
 bitcoin.networks.shadow = {
   magicPrefix: '\x19ShadowCash Signed Message:\n',
   bip32: {
