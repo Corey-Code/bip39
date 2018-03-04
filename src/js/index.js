@@ -460,7 +460,13 @@
     }
 
     var networks = [
-
+        {
+            name: "Commercium",
+            onSelect: function() {
+                network = bitcoin.networks.commercium;
+                DOM.bip44coin.val(192);
+            },
+        },
         {
             name: "Auroracoin",
             onSelect: function() {
